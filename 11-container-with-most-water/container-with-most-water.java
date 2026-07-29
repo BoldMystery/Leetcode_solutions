@@ -8,7 +8,7 @@ class Solution {
             int area = (high - low) * Math.min(height[high],height[low]); // Main formula to Calculate area (Backbone of this code)
             maximum = Math.max(maximum,area);
 
-            if(height[low] <= height[high]){
+            if(height[low] < height[high]){
                 low++;
             }else{
                 high--;
